@@ -1,0 +1,622 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "tensor",
+      "shape": [
+        1,
+        9
+      ],
+      "dtype": null,
+      "id": 2902258889600
+    },
+    {
+      "type": "operation",
+      "op_name": "embedding",
+      "id": "op_embedding_2902259127728"
+    },
+    {
+      "type": "tensor",
+      "id": 2902259127728
+    },
+    {
+      "type": "tensor",
+      "shape": [
+        50257,
+        768
+      ],
+      "dtype": null,
+      "id": 2902258883552
+    },
+    {
+      "type": "operation",
+      "op_name": "linear",
+      "id": "op_linear_2902259768528"
+    },
+    {
+      "type": "tensor",
+      "id": 2902259768528
+    },
+    {
+      "type": "tensor",
+      "shape": [
+        1,
+        9
+      ],
+      "dtype": "int64",
+      "id": 2902259124688
+    },
+    {
+      "type": "operation",
+      "op_name": "embedding",
+      "id": "op_embedding_2902255728208"
+    },
+    {
+      "type": "tensor",
+      "id": 2902255728208
+    },
+    {
+      "type": "tensor",
+      "shape": [
+        1024,
+        768
+      ],
+      "dtype": null,
+      "id": 2902259484304
+    },
+    {
+      "type": "operation",
+      "op_name": "add",
+      "id": "op_add_2902258559424"
+    },
+    {
+      "type": "tensor",
+      "id": 2902258559424
+    },
+    {
+      "type": "operation",
+      "op_name": "dropout",
+      "id": "op_dropout_2902258561056"
+    },
+    {
+      "type": "tensor",
+      "id": 2902258561056
+    },
+    {
+      "type": "operation",
+      "op_name": "layer_norm",
+      "id": "op_layer_norm_2902258969424"
+    },
+    {
+      "type": "tensor",
+      "id": 2902258969424
+    },
+    {
+      "type": "operation",
+      "op_name": "add",
+      "id": "op_add_2902258570960"
+    },
+    {
+      "type": "tensor",
+      "id": 2902258570960
+    },
+    {
+      "type": "operation",
+      "op_name": "matmul",
+      "id": "op_matmul_2902258969680"
+    },
+    {
+      "type": "tensor",
+      "id": 2902258969680
+    },
+    {
+      "type": "operation",
+      "op_name": "linear",
+      "id": "op_linear_2902259343168"
+    },
+    {
+      "type": "tensor",
+      "id": 2902259343168
+    },
+    {
+      "type": "operation",
+      "op_name": "add",
+      "id": "op_add_2902259343168"
+    },
+    {
+      "type": "tensor",
+      "shape": [
+        576
+      ],
+      "dtype": null,
+      "id": 2902226164272
+    },
+    {
+      "type": "tensor",
+      "shape": [
+        576,
+        768
+      ],
+      "dtype": null,
+      "id": 2902259125296
+    },
+    {
+      "type": "tensor",
+      "shape": [
+        1,
+        9,
+        192
+      ],
+      "dtype": null,
+      "id": 2902259343408
+    },
+    {
+      "type": "operation",
+      "op_name": "matmul",
+      "id": "op_matmul_2902259475728"
+    },
+    {
+      "type": "tensor",
+      "id": 2902259475728
+    },
+    {
+      "type": "operation",
+      "op_name": "linear",
+      "id": "op_linear_2902259475728"
+    },
+    {
+      "type": "tensor",
+      "shape": [
+        768,
+        192
+      ],
+      "dtype": null,
+      "id": 2901933856960
+    },
+    {
+      "type": "operation",
+      "op_name": "add",
+      "id": "op_add_2902259477520"
+    },
+    {
+      "type": "tensor",
+      "id": 2902259477520
+    },
+    {
+      "type": "tensor",
+      "shape": [
+        768
+      ],
+      "dtype": null,
+      "id": 2902258559696
+    },
+    {
+      "type": "operation",
+      "op_name": "dropout",
+      "id": "op_dropout_2902259690336"
+    },
+    {
+      "type": "tensor",
+      "id": 2902259690336
+    },
+    {
+      "type": "operation",
+      "op_name": "layer_norm",
+      "id": "op_layer_norm_2902258571152"
+    },
+    {
+      "type": "tensor",
+      "id": 2902258571152
+    },
+    {
+      "type": "operation",
+      "op_name": "add",
+      "id": "op_add_2902259766480"
+    },
+    {
+      "type": "tensor",
+      "id": 2902259766480
+    },
+    {
+      "type": "operation",
+      "op_name": "matmul",
+      "id": "op_matmul_2902258458080"
+    },
+    {
+      "type": "tensor",
+      "id": 2902258458080
+    },
+    {
+      "type": "operation",
+      "op_name": "linear",
+      "id": "op_linear_2902258458256"
+    },
+    {
+      "type": "tensor",
+      "id": 2902258458256
+    },
+    {
+      "type": "operation",
+      "op_name": "add",
+      "id": "op_add_2902258458256"
+    },
+    {
+      "type": "tensor",
+      "shape": [
+        768
+      ],
+      "dtype": null,
+      "id": 2902259342928
+    },
+    {
+      "type": "tensor",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": null,
+      "id": 2902259340288
+    },
+    {
+      "type": "operation",
+      "op_name": "gelu",
+      "id": "op_gelu_2902259431248"
+    },
+    {
+      "type": "tensor",
+      "id": 2902259431248
+    },
+    {
+      "type": "operation",
+      "op_name": "matmul",
+      "id": "op_matmul_2902259430608"
+    },
+    {
+      "type": "tensor",
+      "id": 2902259430608
+    },
+    {
+      "type": "operation",
+      "op_name": "linear",
+      "id": "op_linear_2902259430608"
+    },
+    {
+      "type": "tensor",
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": null,
+      "id": 2902259475952
+    },
+    {
+      "type": "operation",
+      "op_name": "add",
+      "id": "op_add_2902258428976"
+    },
+    {
+      "type": "tensor",
+      "id": 2902258428976
+    },
+    {
+      "type": "tensor",
+      "shape": [
+        768
+      ],
+      "dtype": null,
+      "id": 2902259476400
+    },
+    {
+      "type": "operation",
+      "op_name": "dropout",
+      "id": "op_dropout_2902259765840"
+    },
+    {
+      "type": "tensor",
+      "id": 2902259765840
+    },
+    {
+      "type": "operation",
+      "op_name": "layer_norm",
+      "id": "op_layer_norm_2902259767888"
+    },
+    {
+      "type": "tensor",
+      "id": 2902259767888
+    },
+    {
+      "type": "operation",
+      "op_name": "layer_norm",
+      "id": "op_layer_norm_2902259765840"
+    },
+    {
+      "type": "operation",
+      "op_name": "matmul",
+      "id": "op_matmul_2902259768528"
+    }
+  ],
+  "links": [
+    {
+      "source": 2902258889600,
+      "target": "op_embedding_2902259127728"
+    },
+    {
+      "source": "op_embedding_2902259127728",
+      "target": 2902259127728
+    },
+    {
+      "source": 2902259127728,
+      "target": "op_add_2902258559424"
+    },
+    {
+      "source": 2902258883552,
+      "target": "op_embedding_2902259127728"
+    },
+    {
+      "source": 2902258883552,
+      "target": "op_linear_2902259768528"
+    },
+    {
+      "source": "op_linear_2902259768528",
+      "target": 2902259768528
+    },
+    {
+      "source": 2902259124688,
+      "target": "op_embedding_2902255728208"
+    },
+    {
+      "source": "op_embedding_2902255728208",
+      "target": 2902255728208
+    },
+    {
+      "source": 2902255728208,
+      "target": "op_add_2902258559424"
+    },
+    {
+      "source": 2902259484304,
+      "target": "op_embedding_2902255728208"
+    },
+    {
+      "source": "op_add_2902258559424",
+      "target": 2902258559424
+    },
+    {
+      "source": 2902258559424,
+      "target": "op_dropout_2902258561056"
+    },
+    {
+      "source": "op_dropout_2902258561056",
+      "target": 2902258561056
+    },
+    {
+      "source": 2902258561056,
+      "target": "op_layer_norm_2902258969424"
+    },
+    {
+      "source": 2902258561056,
+      "target": "op_add_2902258570960"
+    },
+    {
+      "source": "op_layer_norm_2902258969424",
+      "target": 2902258969424
+    },
+    {
+      "source": 2902258969424,
+      "target": "op_matmul_2902258969680"
+    },
+    {
+      "source": 2902258969424,
+      "target": "op_linear_2902259343168"
+    },
+    {
+      "source": "op_add_2902258570960",
+      "target": 2902258570960
+    },
+    {
+      "source": 2902258570960,
+      "target": "op_layer_norm_2902258571152"
+    },
+    {
+      "source": 2902258570960,
+      "target": "op_add_2902259766480"
+    },
+    {
+      "source": "op_matmul_2902258969680",
+      "target": 2902258969680
+    },
+    {
+      "source": 2902258969680,
+      "target": "op_add_2902259343168"
+    },
+    {
+      "source": "op_linear_2902259343168",
+      "target": 2902259343168
+    },
+    {
+      "source": "op_add_2902259343168",
+      "target": 2902259343168
+    },
+    {
+      "source": 2902226164272,
+      "target": "op_add_2902259343168"
+    },
+    {
+      "source": 2902226164272,
+      "target": "op_linear_2902259343168"
+    },
+    {
+      "source": 2902259125296,
+      "target": "op_linear_2902259343168"
+    },
+    {
+      "source": 2902259343408,
+      "target": "op_matmul_2902259475728"
+    },
+    {
+      "source": 2902259343408,
+      "target": "op_linear_2902259475728"
+    },
+    {
+      "source": "op_matmul_2902259475728",
+      "target": 2902259475728
+    },
+    {
+      "source": 2902259475728,
+      "target": "op_add_2902259477520"
+    },
+    {
+      "source": "op_linear_2902259475728",
+      "target": 2902259475728
+    },
+    {
+      "source": 2901933856960,
+      "target": "op_linear_2902259475728"
+    },
+    {
+      "source": "op_add_2902259477520",
+      "target": 2902259477520
+    },
+    {
+      "source": 2902259477520,
+      "target": "op_dropout_2902259690336"
+    },
+    {
+      "source": 2902258559696,
+      "target": "op_add_2902259477520"
+    },
+    {
+      "source": "op_dropout_2902259690336",
+      "target": 2902259690336
+    },
+    {
+      "source": 2902259690336,
+      "target": "op_add_2902258570960"
+    },
+    {
+      "source": "op_layer_norm_2902258571152",
+      "target": 2902258571152
+    },
+    {
+      "source": 2902258571152,
+      "target": "op_matmul_2902258458080"
+    },
+    {
+      "source": 2902258571152,
+      "target": "op_linear_2902258458256"
+    },
+    {
+      "source": "op_add_2902259766480",
+      "target": 2902259766480
+    },
+    {
+      "source": 2902259766480,
+      "target": "op_layer_norm_2902259765840"
+    },
+    {
+      "source": "op_matmul_2902258458080",
+      "target": 2902258458080
+    },
+    {
+      "source": 2902258458080,
+      "target": "op_add_2902258458256"
+    },
+    {
+      "source": "op_linear_2902258458256",
+      "target": 2902258458256
+    },
+    {
+      "source": 2902258458256,
+      "target": "op_gelu_2902259431248"
+    },
+    {
+      "source": "op_add_2902258458256",
+      "target": 2902258458256
+    },
+    {
+      "source": 2902259342928,
+      "target": "op_add_2902258458256"
+    },
+    {
+      "source": 2902259342928,
+      "target": "op_linear_2902258458256"
+    },
+    {
+      "source": 2902259340288,
+      "target": "op_linear_2902258458256"
+    },
+    {
+      "source": "op_gelu_2902259431248",
+      "target": 2902259431248
+    },
+    {
+      "source": 2902259431248,
+      "target": "op_matmul_2902259430608"
+    },
+    {
+      "source": 2902259431248,
+      "target": "op_linear_2902259430608"
+    },
+    {
+      "source": "op_matmul_2902259430608",
+      "target": 2902259430608
+    },
+    {
+      "source": 2902259430608,
+      "target": "op_add_2902258428976"
+    },
+    {
+      "source": "op_linear_2902259430608",
+      "target": 2902259430608
+    },
+    {
+      "source": 2902259475952,
+      "target": "op_linear_2902259430608"
+    },
+    {
+      "source": "op_add_2902258428976",
+      "target": 2902258428976
+    },
+    {
+      "source": 2902258428976,
+      "target": "op_dropout_2902259765840"
+    },
+    {
+      "source": 2902259476400,
+      "target": "op_add_2902258428976"
+    },
+    {
+      "source": "op_dropout_2902259765840",
+      "target": 2902259765840
+    },
+    {
+      "source": 2902259765840,
+      "target": "op_add_2902259766480"
+    },
+    {
+      "source": 2902259765840,
+      "target": "op_layer_norm_2902259767888"
+    },
+    {
+      "source": "op_layer_norm_2902259767888",
+      "target": 2902259767888
+    },
+    {
+      "source": 2902259767888,
+      "target": "op_matmul_2902259768528"
+    },
+    {
+      "source": 2902259767888,
+      "target": "op_linear_2902259768528"
+    },
+    {
+      "source": "op_layer_norm_2902259765840",
+      "target": 2902259765840
+    },
+    {
+      "source": "op_matmul_2902259768528",
+      "target": 2902259768528
+    }
+  ]
+}

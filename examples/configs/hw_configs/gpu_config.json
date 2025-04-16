@@ -1,0 +1,126 @@
+{
+  "name": "Simple GPU",
+  "components": {
+    "gpu": {
+      "type": "group",
+      "components": ["sm_group", "memory_hierarchy"]
+    },
+    "sm_group": {
+      "type": "group",
+      "components": ["sm0", "sm1", "sm2", "sm3"]
+    },
+    "sm0": {
+      "type": "compute",
+      "metadata": {
+        "ops_supported": ["matmul", "add", "mul", "relu", "gelu", "softmax"],
+        "performance": {
+          "matmul_flops": 10000,
+          "add_flops": 20000,
+          "mul_flops": 20000
+        }
+      }
+    },
+    "sm1": {
+      "type": "compute",
+      "metadata": {
+        "ops_supported": ["matmul", "add", "mul", "relu", "gelu", "softmax"],
+        "performance": {
+          "matmul_flops": 10000,
+          "add_flops": 20000,
+          "mul_flops": 20000
+        }
+      }
+    },
+    "sm2": {
+      "type": "compute",
+      "metadata": {
+        "ops_supported": ["matmul", "add", "mul", "relu", "gelu", "softmax"],
+        "performance": {
+          "matmul_flops": 10000,
+          "add_flops": 20000,
+          "mul_flops": 20000
+        }
+      }
+    },
+    "sm3": {
+      "type": "compute",
+      "metadata": {
+        "ops_supported": ["matmul", "add", "mul", "relu", "gelu", "softmax"],
+        "performance": {
+          "matmul_flops": 10000,
+          "add_flops": 20000,
+          "mul_flops": 20000
+        }
+      }
+    },
+    "memory_hierarchy": {
+      "type": "group",
+      "components": ["hbm", "l2_cache", "l1_cache0", "l1_cache1", "l1_cache2", "l1_cache3"]
+    },
+    "hbm": {
+      "type": "memory",
+      "start_address": 0,
+      "size": 16777216,
+      "metadata": {
+        "latency": 300,
+        "bandwidth": 900
+      }
+    },
+    "l2_cache": {
+      "type": "memory",
+      "start_address": 16777216,
+      "size": 4194304,
+      "metadata": {
+        "latency": 100,
+        "bandwidth": 2000
+      }
+    },
+    "l1_cache0": {
+      "type": "memory",
+      "start_address": 20971520,
+      "size": 65536,
+      "metadata": {
+        "latency": 20,
+        "bandwidth": 4000
+      }
+    },
+    "l1_cache1": {
+      "type": "memory",
+      "start_address": 21037056,
+      "size": 65536,
+      "metadata": {
+        "latency": 20,
+        "bandwidth": 4000
+      }
+    },
+    "l1_cache2": {
+      "type": "memory",
+      "start_address": 21102592,
+      "size": 65536,
+      "metadata": {
+        "latency": 20,
+        "bandwidth": 4000
+      }
+    },
+    "l1_cache3": {
+      "type": "memory",
+      "start_address": 21168128,
+      "size": 65536,
+      "metadata": {
+        "latency": 20,
+        "bandwidth": 4000
+      }
+    }
+  },
+  "connections": [
+    { "source": "sm0", "target": "l1_cache0" },
+    { "source": "sm1", "target": "l1_cache1" },
+    { "source": "sm2", "target": "l1_cache2" },
+    { "source": "sm3", "target": "l1_cache3" },
+    { "source": "l1_cache0", "target": "l2_cache" },
+    { "source": "l1_cache1", "target": "l2_cache" },
+    { "source": "l1_cache2", "target": "l2_cache" },
+    { "source": "l1_cache3", "target": "l2_cache" },
+    { "source": "l2_cache", "target": "hbm" }
+  ]
+} 

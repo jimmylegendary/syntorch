@@ -1,0 +1,857 @@
+{
+  "schema_version": "0.1.0",
+  "name": "syntorch_model",
+  "metadata": {
+    "framework": "syntorch",
+    "description": "Syntorch Tensor Operation Graph",
+    "created_at": "2025-04-17T04:04:52.665981"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "n0",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            1,
+            9
+          ]
+        }
+      },
+      {
+        "id": "n1",
+        "type": "operation",
+        "attributes": {
+          "operation": "embedding"
+        }
+      },
+      {
+        "id": "n2",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n3",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            50257,
+            768
+          ]
+        }
+      },
+      {
+        "id": "n4",
+        "type": "operation",
+        "attributes": {
+          "operation": "linear"
+        }
+      },
+      {
+        "id": "n5",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n6",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            1,
+            9
+          ],
+          "dtype": "int64"
+        }
+      },
+      {
+        "id": "n7",
+        "type": "operation",
+        "attributes": {
+          "operation": "embedding"
+        }
+      },
+      {
+        "id": "n8",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n9",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            1024,
+            768
+          ]
+        }
+      },
+      {
+        "id": "n10",
+        "type": "operation",
+        "attributes": {
+          "operation": "add"
+        }
+      },
+      {
+        "id": "n11",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n12",
+        "type": "operation",
+        "attributes": {
+          "operation": "dropout"
+        }
+      },
+      {
+        "id": "n13",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n14",
+        "type": "operation",
+        "attributes": {
+          "operation": "layer_norm"
+        }
+      },
+      {
+        "id": "n15",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n16",
+        "type": "operation",
+        "attributes": {
+          "operation": "add"
+        }
+      },
+      {
+        "id": "n17",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n18",
+        "type": "operation",
+        "attributes": {
+          "operation": "matmul"
+        }
+      },
+      {
+        "id": "n19",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n20",
+        "type": "operation",
+        "attributes": {
+          "operation": "linear"
+        }
+      },
+      {
+        "id": "n21",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n22",
+        "type": "operation",
+        "attributes": {
+          "operation": "add"
+        }
+      },
+      {
+        "id": "n23",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            576
+          ]
+        }
+      },
+      {
+        "id": "n24",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            576,
+            768
+          ]
+        }
+      },
+      {
+        "id": "n25",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            1,
+            9,
+            192
+          ]
+        }
+      },
+      {
+        "id": "n26",
+        "type": "operation",
+        "attributes": {
+          "operation": "matmul"
+        }
+      },
+      {
+        "id": "n27",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n28",
+        "type": "operation",
+        "attributes": {
+          "operation": "linear"
+        }
+      },
+      {
+        "id": "n29",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            768,
+            192
+          ]
+        }
+      },
+      {
+        "id": "n30",
+        "type": "operation",
+        "attributes": {
+          "operation": "add"
+        }
+      },
+      {
+        "id": "n31",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n32",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            768
+          ]
+        }
+      },
+      {
+        "id": "n33",
+        "type": "operation",
+        "attributes": {
+          "operation": "dropout"
+        }
+      },
+      {
+        "id": "n34",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n35",
+        "type": "operation",
+        "attributes": {
+          "operation": "layer_norm"
+        }
+      },
+      {
+        "id": "n36",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n37",
+        "type": "operation",
+        "attributes": {
+          "operation": "add"
+        }
+      },
+      {
+        "id": "n38",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n39",
+        "type": "operation",
+        "attributes": {
+          "operation": "matmul"
+        }
+      },
+      {
+        "id": "n40",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n41",
+        "type": "operation",
+        "attributes": {
+          "operation": "linear"
+        }
+      },
+      {
+        "id": "n42",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n43",
+        "type": "operation",
+        "attributes": {
+          "operation": "add"
+        }
+      },
+      {
+        "id": "n44",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            768
+          ]
+        }
+      },
+      {
+        "id": "n45",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            768,
+            768
+          ]
+        }
+      },
+      {
+        "id": "n46",
+        "type": "operation",
+        "attributes": {
+          "operation": "gelu"
+        }
+      },
+      {
+        "id": "n47",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n48",
+        "type": "operation",
+        "attributes": {
+          "operation": "matmul"
+        }
+      },
+      {
+        "id": "n49",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n50",
+        "type": "operation",
+        "attributes": {
+          "operation": "linear"
+        }
+      },
+      {
+        "id": "n51",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            768,
+            768
+          ]
+        }
+      },
+      {
+        "id": "n52",
+        "type": "operation",
+        "attributes": {
+          "operation": "add"
+        }
+      },
+      {
+        "id": "n53",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n54",
+        "type": "tensor",
+        "attributes": {
+          "shape": [
+            768
+          ]
+        }
+      },
+      {
+        "id": "n55",
+        "type": "operation",
+        "attributes": {
+          "operation": "dropout"
+        }
+      },
+      {
+        "id": "n56",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n57",
+        "type": "operation",
+        "attributes": {
+          "operation": "layer_norm"
+        }
+      },
+      {
+        "id": "n58",
+        "type": "tensor",
+        "attributes": {}
+      },
+      {
+        "id": "n59",
+        "type": "operation",
+        "attributes": {
+          "operation": "layer_norm"
+        }
+      },
+      {
+        "id": "n60",
+        "type": "operation",
+        "attributes": {
+          "operation": "matmul"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e0",
+        "source": "n0",
+        "target": "n1",
+        "attributes": {}
+      },
+      {
+        "id": "e1",
+        "source": "n1",
+        "target": "n2",
+        "attributes": {}
+      },
+      {
+        "id": "e2",
+        "source": "n2",
+        "target": "n10",
+        "attributes": {}
+      },
+      {
+        "id": "e3",
+        "source": "n3",
+        "target": "n1",
+        "attributes": {}
+      },
+      {
+        "id": "e4",
+        "source": "n3",
+        "target": "n4",
+        "attributes": {}
+      },
+      {
+        "id": "e5",
+        "source": "n4",
+        "target": "n5",
+        "attributes": {}
+      },
+      {
+        "id": "e6",
+        "source": "n6",
+        "target": "n7",
+        "attributes": {}
+      },
+      {
+        "id": "e7",
+        "source": "n7",
+        "target": "n8",
+        "attributes": {}
+      },
+      {
+        "id": "e8",
+        "source": "n8",
+        "target": "n10",
+        "attributes": {}
+      },
+      {
+        "id": "e9",
+        "source": "n9",
+        "target": "n7",
+        "attributes": {}
+      },
+      {
+        "id": "e10",
+        "source": "n10",
+        "target": "n11",
+        "attributes": {}
+      },
+      {
+        "id": "e11",
+        "source": "n11",
+        "target": "n12",
+        "attributes": {}
+      },
+      {
+        "id": "e12",
+        "source": "n12",
+        "target": "n13",
+        "attributes": {}
+      },
+      {
+        "id": "e13",
+        "source": "n13",
+        "target": "n14",
+        "attributes": {}
+      },
+      {
+        "id": "e14",
+        "source": "n13",
+        "target": "n16",
+        "attributes": {}
+      },
+      {
+        "id": "e15",
+        "source": "n14",
+        "target": "n15",
+        "attributes": {}
+      },
+      {
+        "id": "e16",
+        "source": "n15",
+        "target": "n18",
+        "attributes": {}
+      },
+      {
+        "id": "e17",
+        "source": "n15",
+        "target": "n20",
+        "attributes": {}
+      },
+      {
+        "id": "e18",
+        "source": "n16",
+        "target": "n17",
+        "attributes": {}
+      },
+      {
+        "id": "e19",
+        "source": "n17",
+        "target": "n35",
+        "attributes": {}
+      },
+      {
+        "id": "e20",
+        "source": "n17",
+        "target": "n37",
+        "attributes": {}
+      },
+      {
+        "id": "e21",
+        "source": "n18",
+        "target": "n19",
+        "attributes": {}
+      },
+      {
+        "id": "e22",
+        "source": "n19",
+        "target": "n22",
+        "attributes": {}
+      },
+      {
+        "id": "e23",
+        "source": "n20",
+        "target": "n21",
+        "attributes": {}
+      },
+      {
+        "id": "e24",
+        "source": "n22",
+        "target": "n21",
+        "attributes": {}
+      },
+      {
+        "id": "e25",
+        "source": "n23",
+        "target": "n22",
+        "attributes": {}
+      },
+      {
+        "id": "e26",
+        "source": "n23",
+        "target": "n20",
+        "attributes": {}
+      },
+      {
+        "id": "e27",
+        "source": "n24",
+        "target": "n20",
+        "attributes": {}
+      },
+      {
+        "id": "e28",
+        "source": "n25",
+        "target": "n26",
+        "attributes": {}
+      },
+      {
+        "id": "e29",
+        "source": "n25",
+        "target": "n28",
+        "attributes": {}
+      },
+      {
+        "id": "e30",
+        "source": "n26",
+        "target": "n27",
+        "attributes": {}
+      },
+      {
+        "id": "e31",
+        "source": "n27",
+        "target": "n30",
+        "attributes": {}
+      },
+      {
+        "id": "e32",
+        "source": "n28",
+        "target": "n27",
+        "attributes": {}
+      },
+      {
+        "id": "e33",
+        "source": "n29",
+        "target": "n28",
+        "attributes": {}
+      },
+      {
+        "id": "e34",
+        "source": "n30",
+        "target": "n31",
+        "attributes": {}
+      },
+      {
+        "id": "e35",
+        "source": "n31",
+        "target": "n33",
+        "attributes": {}
+      },
+      {
+        "id": "e36",
+        "source": "n32",
+        "target": "n30",
+        "attributes": {}
+      },
+      {
+        "id": "e37",
+        "source": "n33",
+        "target": "n34",
+        "attributes": {}
+      },
+      {
+        "id": "e38",
+        "source": "n34",
+        "target": "n16",
+        "attributes": {}
+      },
+      {
+        "id": "e39",
+        "source": "n35",
+        "target": "n36",
+        "attributes": {}
+      },
+      {
+        "id": "e40",
+        "source": "n36",
+        "target": "n39",
+        "attributes": {}
+      },
+      {
+        "id": "e41",
+        "source": "n36",
+        "target": "n41",
+        "attributes": {}
+      },
+      {
+        "id": "e42",
+        "source": "n37",
+        "target": "n38",
+        "attributes": {}
+      },
+      {
+        "id": "e43",
+        "source": "n38",
+        "target": "n59",
+        "attributes": {}
+      },
+      {
+        "id": "e44",
+        "source": "n39",
+        "target": "n40",
+        "attributes": {}
+      },
+      {
+        "id": "e45",
+        "source": "n40",
+        "target": "n43",
+        "attributes": {}
+      },
+      {
+        "id": "e46",
+        "source": "n41",
+        "target": "n42",
+        "attributes": {}
+      },
+      {
+        "id": "e47",
+        "source": "n42",
+        "target": "n46",
+        "attributes": {}
+      },
+      {
+        "id": "e48",
+        "source": "n43",
+        "target": "n42",
+        "attributes": {}
+      },
+      {
+        "id": "e49",
+        "source": "n44",
+        "target": "n43",
+        "attributes": {}
+      },
+      {
+        "id": "e50",
+        "source": "n44",
+        "target": "n41",
+        "attributes": {}
+      },
+      {
+        "id": "e51",
+        "source": "n45",
+        "target": "n41",
+        "attributes": {}
+      },
+      {
+        "id": "e52",
+        "source": "n46",
+        "target": "n47",
+        "attributes": {}
+      },
+      {
+        "id": "e53",
+        "source": "n47",
+        "target": "n48",
+        "attributes": {}
+      },
+      {
+        "id": "e54",
+        "source": "n47",
+        "target": "n50",
+        "attributes": {}
+      },
+      {
+        "id": "e55",
+        "source": "n48",
+        "target": "n49",
+        "attributes": {}
+      },
+      {
+        "id": "e56",
+        "source": "n49",
+        "target": "n52",
+        "attributes": {}
+      },
+      {
+        "id": "e57",
+        "source": "n50",
+        "target": "n49",
+        "attributes": {}
+      },
+      {
+        "id": "e58",
+        "source": "n51",
+        "target": "n50",
+        "attributes": {}
+      },
+      {
+        "id": "e59",
+        "source": "n52",
+        "target": "n53",
+        "attributes": {}
+      },
+      {
+        "id": "e60",
+        "source": "n53",
+        "target": "n55",
+        "attributes": {}
+      },
+      {
+        "id": "e61",
+        "source": "n54",
+        "target": "n52",
+        "attributes": {}
+      },
+      {
+        "id": "e62",
+        "source": "n55",
+        "target": "n56",
+        "attributes": {}
+      },
+      {
+        "id": "e63",
+        "source": "n56",
+        "target": "n37",
+        "attributes": {}
+      },
+      {
+        "id": "e64",
+        "source": "n56",
+        "target": "n57",
+        "attributes": {}
+      },
+      {
+        "id": "e65",
+        "source": "n57",
+        "target": "n58",
+        "attributes": {}
+      },
+      {
+        "id": "e66",
+        "source": "n58",
+        "target": "n60",
+        "attributes": {}
+      },
+      {
+        "id": "e67",
+        "source": "n58",
+        "target": "n4",
+        "attributes": {}
+      },
+      {
+        "id": "e68",
+        "source": "n59",
+        "target": "n56",
+        "attributes": {}
+      },
+      {
+        "id": "e69",
+        "source": "n60",
+        "target": "n5",
+        "attributes": {}
+      }
+    ]
+  }
+}

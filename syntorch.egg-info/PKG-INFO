@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: syntorch
+Version: 0.1.0
+Summary: LLM 추론을 위한 합성 트레이스 생성 프레임워크
+Home-page: https://github.com/username/syntorch
+Author: SyntorchTeam
+Author-email: example@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: torch>=1.7.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

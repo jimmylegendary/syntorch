@@ -1,0 +1,14 @@
+{
+  "n_layer": 1,
+  "n_head": 4,
+  "n_embd": 768,
+  "vocab_size": 50257,
+  "n_positions": 1024,
+  "n_inner": 3072,
+  "embd_pdrop": 0.1,
+  "attn_pdrop": 0.1,
+  "resid_pdrop": 0.1,
+  "layer_norm_epsilon": 1e-5,
+  "initializer_range": 0.02,
+  "eos_token_id": 50258
+} 

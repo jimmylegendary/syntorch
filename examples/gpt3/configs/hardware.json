@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "devices": [
+    {
+      "type": "cpu",
+      "name": "cpu_core",
+      "specs": {
+        "cores": 4,
+        "frequency_mhz": 2500,
+        "architecture": "x86_64"
+      }
+    },
+    {
+      "type": "gpu",
+      "name": "gpu_device",
+      "specs": {
+        "cores": 1024,
+        "frequency_mhz": 1500,
+        "memory_size_mb": 4096,
+        "memory_bandwidth_gbps": 300,
+        "architecture": "cuda"
+      }
+    }
+  ],
+  "memory": {
+    "total_size_mb": 8192,
+    "reserved_size_mb": 1024,
+    "page_size_kb": 4,
+    "cache_size_kb": 256
+  }
+} 
